@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sem permissão</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; background:#f8fafc; margin:0; }
+    .wrap { max-width: 720px; margin: 56px auto; padding: 0 16px; }
+    .card { background:#fff; border:1px solid #e5e7eb; border-radius: 14px; padding: 22px; box-shadow: 0 1px 10px rgba(0,0,0,.04); }
+    h1 { margin: 0 0 10px 0; font-size: 20px; }
+    p { margin: 0 0 14px 0; color:#475569; }
+    a { color:#0f766e; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Acesso negado</h1>
+      <p>Seu usuário autenticou no AD, mas não está em um dos grupos permitidos para esta aplicação.</p>
+      <p><a href="/login">Voltar ao login</a></p>
+    </div>
+  </div>
+</body>
+</html>

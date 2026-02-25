@@ -1,0 +1,93 @@
+{
+  "groups": [
+    {
+      "name": "ceasa.security.ad.groups",
+      "type": "br.com.ceasa.security.ad.starter.props.CeasaAdGroupProperties",
+      "sourceType": "br.com.ceasa.security.ad.starter.props.CeasaAdGroupProperties"
+    },
+    {
+      "name": "ceasa.security.ad.ldap",
+      "type": "br.com.ceasa.security.ad.starter.props.CeasaAdLdapProperties",
+      "sourceType": "br.com.ceasa.security.ad.starter.props.CeasaAdLdapProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "ceasa.security.ad.groups.allowed-roles",
+      "type": "java.util.List<java.lang.String>",
+      "description": "Quais roles aceitas (sem prefixo ROLE_). Ex: USER,ADMIN,SUPORTE",
+      "sourceType": "br.com.ceasa.security.ad.starter.props.CeasaAdGroupProperties",
+      "defaultValue": "USER"
+    },
+    {
+      "name": "ceasa.security.ad.groups.group-prefix",
+      "type": "java.lang.String",
+      "description": "Prefixo dos grupos no AD (CN). Ex: APP_AUDESP_ ou APP_CEASA_SECURITY_",
+      "sourceType": "br.com.ceasa.security.ad.starter.props.CeasaAdGroupProperties",
+      "defaultValue": "APP_"
+    },
+    {
+      "name": "ceasa.security.ad.groups.group-search-base",
+      "type": "java.lang.String",
+      "description": "Onde procurar grupos (relativo ao baseDn). Ex: OU=GRUPOS,OU=PID,OU=Ceasa Campinas",
+      "sourceType": "br.com.ceasa.security.ad.starter.props.CeasaAdGroupProperties",
+      "defaultValue": ""
+    },
+    {
+      "name": "ceasa.security.ad.groups.group-search-filter",
+      "type": "java.lang.String",
+      "description": "Filtro de busca de grupos. Default (member={0})",
+      "sourceType": "br.com.ceasa.security.ad.starter.props.CeasaAdGroupProperties",
+      "defaultValue": "(member={0})"
+    },
+    {
+      "name": "ceasa.security.ad.groups.role-prefix",
+      "type": "java.lang.String",
+      "description": "Prefixo das roles no Spring. Ex: ROLE_AUDESP_ ou ROLE_CEASA_",
+      "sourceType": "br.com.ceasa.security.ad.starter.props.CeasaAdGroupProperties",
+      "defaultValue": "ROLE_"
+    },
+    {
+      "name": "ceasa.security.ad.ldap.base-dn",
+      "type": "java.lang.String",
+      "description": "DC=ceasacps,DC=com,DC=br",
+      "sourceType": "br.com.ceasa.security.ad.starter.props.CeasaAdLdapProperties"
+    },
+    {
+      "name": "ceasa.security.ad.ldap.bind-dn",
+      "type": "java.lang.String",
+      "description": "Conta de serviço para search (UPN ou DN). Ex: svc_ldap_app@ceasacps.com.br",
+      "sourceType": "br.com.ceasa.security.ad.starter.props.CeasaAdLdapProperties"
+    },
+    {
+      "name": "ceasa.security.ad.ldap.bind-password",
+      "type": "java.lang.String",
+      "description": "Senha da conta de serviço",
+      "sourceType": "br.com.ceasa.security.ad.starter.props.CeasaAdLdapProperties"
+    },
+    {
+      "name": "ceasa.security.ad.ldap.url",
+      "type": "java.lang.String",
+      "description": "ldaps:\/\/SRV-ADDS-01.ceasacps.com.br:636",
+      "sourceType": "br.com.ceasa.security.ad.starter.props.CeasaAdLdapProperties"
+    },
+    {
+      "name": "ceasa.security.ad.ldap.user-search-base",
+      "type": "java.lang.String",
+      "description": "Base para procurar usuários. Vazio = baseDn",
+      "sourceType": "br.com.ceasa.security.ad.starter.props.CeasaAdLdapProperties",
+      "defaultValue": ""
+    },
+    {
+      "name": "ceasa.security.ad.ldap.user-search-filter",
+      "type": "java.lang.String",
+      "description": "Filtro para procurar usuário. Default sAMAccountName",
+      "sourceType": "br.com.ceasa.security.ad.starter.props.CeasaAdLdapProperties",
+      "defaultValue": "(sAMAccountName={0})"
+    }
+  ],
+  "hints": [],
+  "ignored": {
+    "properties": []
+  }
+}

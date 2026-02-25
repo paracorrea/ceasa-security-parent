@@ -1,0 +1,5 @@
+br\com\ceasa\security\ad\demo\web\LoginController.class
+br\com\ceasa\security\ad\demo\web\HomeController.class
+br\com\ceasa\security\ad\demo\CeasaAdSecurityDemoApplication.class
+br\com\ceasa\security\ad\demo\web\AccessDeniedController.class
+br\com\ceasa\security\ad\demo\config\SecurityConfig.class

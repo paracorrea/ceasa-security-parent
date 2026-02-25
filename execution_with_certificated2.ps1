@@ -1,0 +1,1 @@
+﻿& "C:\Program Files\Java\jdk-17\bin\java.exe" "-Djavax.net.ssl.trustStore=C:\cert\ceasa-truststore.jks" "-Djavax.net.ssl.trustStorePassword=SenhaForteAqui" -jar "D:\projetos\springBoot\ceasa-ad-security\ceasa-ad-security-demo\target\ceasa-ad-security-demo-0.2.0-SNAPSHOT.jar"
