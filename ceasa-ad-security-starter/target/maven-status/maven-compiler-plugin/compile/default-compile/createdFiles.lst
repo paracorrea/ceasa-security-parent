@@ -1,5 +1,5 @@
+br\com\ceasa\security\ad\starter\props\CeasaAdGroupProperties.class
 br\com\ceasa\security\ad\starter\config\CeasaAdSecurityAutoConfiguration.class
 br\com\ceasa\security\ad\starter\props\CeasaAdLdapProperties.class
 br\com\ceasa\security\ad\starter\ldap\CeasaLdapAuthoritiesPopulator.class
 META-INF\spring-configuration-metadata.json
-br\com\ceasa\security\ad\starter\props\CeasaAdGroupProperties.class
